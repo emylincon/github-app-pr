@@ -1,4 +1,4 @@
-# Github App for PRs
+# Github App for PRs ![Build](https://img.shields.io/github/workflow/status/emylincon/github-app-pr/GithubApp)
 This is a basic app for handling PRs. The following are the app's functionalities
 * Label PR
 * Comment on PR
