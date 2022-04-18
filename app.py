@@ -17,6 +17,11 @@ git_integration = GithubIntegration(
 )
 
 
+@app.route("/", methods=["GET"])
+def home():
+    return "Hello 👋"
+
+
 @app.route("/", methods=["POST"])
 def bot():
     # Get the event payload
