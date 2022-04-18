@@ -1,4 +1,4 @@
-# Github App for PRs
+# Github App for PRs
 This is a basic app for handling PRs. The following are the app's functionalities
 * Label PR
 * Comment on PR
