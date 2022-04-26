@@ -20,6 +20,12 @@ pip3 install -r requirements
 python3 app
 ```
 
+# Dev Test
+* use ngrok to get internet facing webhook url to test locally
+```
+ngrok http 5000
+```
+
 ## Useful Resources
 * [Github Apps CheatSheet](https://github.com/github-developer/github-apps-cheat-sheet/blob/master/README.md)
 * [Github app Libraries](https://docs.github.com/en/rest/overview/libraries)
