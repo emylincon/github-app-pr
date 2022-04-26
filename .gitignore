@@ -2,3 +2,4 @@ venv/
 .vscode
 *.pem
 .env*
+__pycache__
