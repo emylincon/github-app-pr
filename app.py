@@ -9,6 +9,13 @@ app = Flask(__name__)
 app_id = os.getenv("app_id")
 app_private_key = os.environ.get("app_private_key")
 
+# Verify credentials are set
+for key, value in {"app_id": app_id, "app_private_key": app_private_key}.items():
+    if not value:
+        print(
+            f"[ERROR]: Credentials Not Set - '{key}'\n\tPlease run: \n\texport {key}='somevalue'")
+        quit(1)
+
 
 # Create an GitHub integration instance
 git_integration = GithubIntegration(

@@ -1,6 +1,11 @@
 import unittest
-from app import app
+import os
 
+# * Set environment variables for testing
+os.environ["app_id"] = "test"
+os.environ["app_private_key"] = "test"
+
+from app import app
 
 class TestServer(unittest.TestCase):
     @classmethod

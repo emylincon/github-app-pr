@@ -6,6 +6,14 @@ This is a basic app for handling PRs. The following are the app's functionalitie
 
 ## Getting Started
 * Create github app
+* Create python environment
+```bash
+python3 -m venv venv
+```
+* Activate environment
+```bash
+source venv/bin/activate
+```
 * export environment variables
 ```
 export app_id="XXXXX"
@@ -17,7 +25,7 @@ pip3 install -r requirements
 ```
 * Run app
 ```
-python3 app
+flask run
 ```
 
 # Dev Test
