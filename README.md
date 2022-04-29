@@ -4,6 +4,17 @@ This is a basic app for handling PRs. The following are the app's functionalitie
 * Comment on PR
 * Approve PR
 
+## Permissions and Events Required
+### Repository Permissions
+* Metadata : `READ ONLY`
+* Contents : `READ ONLY`
+* Issues : `READ & WRITE`
+* Pull Request: `READ & WRITE`
+
+### Events Permissions
+- [x] Pull Request
+
+
 ## Getting Started
 * Create github app
 * Create python environment
