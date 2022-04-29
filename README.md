@@ -7,7 +7,7 @@ This is a basic app for handling PRs. The following are the app's functionalitie
 ## Permissions and Events Required
 ### Repository Permissions
 * Metadata : `READ ONLY`
-* Contents : `READ ONLY`
+* Contents (only if Repo is private) : `READ ONLY` 
 * Issues : `READ & WRITE`
 * Pull Request: `READ & WRITE`
 
