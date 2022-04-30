@@ -2,12 +2,11 @@
 This is a basic app for handling PRs. The following are the app's functionalities
 * Label PR
 * Comment on PR
-* Approve PR
+* Approve PR  ⚠️ <span style="color:red; font-style:italic; font-size: 11px">(Does not work if repo is private)</span>
 
 ## Permissions and Events Required
 ### Repository Permissions
 * Metadata : `READ ONLY`
-* Contents (only if Repo is private) : `READ ONLY` 
 * Issues : `READ & WRITE`
 * Pull Request: `READ & WRITE`
 

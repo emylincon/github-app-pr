@@ -63,9 +63,13 @@ def bot():
     issue.set_labels("enhancement")
 
     # Approve PR
-    pr = repo.get_pull(number=payload["pull_request"]["number"])
-    commit = repo.get_commit(pr.head.sha)
-    pr.create_review(commit=commit, body="Approved  👍", event="APPROVE")
+    try:
+        pr = repo.get_pull(number=payload["pull_request"]["number"])
+        commit = repo.get_commit(pr.head.sha)
+        pr.create_review(commit=commit, body="Approved  👍", event="APPROVE")
+    except Exception as e:
+        print("[ERROR]:", e.__class__)
+        print("Please ensure git repository is not private")
 
     return "ok"
 
